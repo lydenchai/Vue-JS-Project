@@ -1,0 +1,315 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    background: rgba(218, 208, 208, 0.616);
+}
+
+/* Login page */
+.login-page{
+    width: 50%;
+    height: 75vh;
+    margin-top: 3%;
+    margin-left: 26%;
+    margin-right: 40%;
+    border-radius: 15px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(../images/Gradient_builder_2.jpg);
+    box-shadow: 0px 3px 5px 5px rgba(204, 204, 204, 0.753);
+} 
+
+/* logo */
+.h2-logo{
+    color: black;
+    font-size: 40px;
+    margin-left: 5%;
+    margin-top: 30px;
+    
+}
+
+/* Ask user */
+.p-ask{
+    margin-left: 5%;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* position of form */
+#user-login,
+#user-password,
+#user-remember{
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+/* feild input username and password */
+input[type="text"],
+input[type="password"]{
+    width: 90%;
+    height: 10%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* checkbox remember user input */
+input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+}
+
+/* tag a user forget */
+.user-forget{
+    float: right;
+    font-size: 20px;
+    margin-right: 40%;
+    text-decoration: none;
+}
+
+/* Ask user to create account */
+.ask-user{
+    text-decoration: none;
+}
+
+
+/* button login */
+.btn-login{
+    float: right;
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 35%;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background: rgb(34, 204, 226);
+}
+
+/* Container */
+.body-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 2%;
+    margin-right: 5%;
+    justify-content: space-between;
+}
+
+/* Details about user */
+.asideBar{
+    width: 25%;
+    height: auto;
+    position: fixed;
+    margin-left: 4%;
+}
+
+/* content of user post */
+.content{
+    width: 37%;
+    height: 100vh;
+    margin-left: 32%;
+}
+
+/* content of other post */
+.other{
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    margin-left: 72%;
+    background: rgb(255, 255, 255);
+}
+
+/* Setting */
+.setting{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+}
+
+/* Background for button logout */
+.setting-bg{
+    background: #fff;
+}
+
+/* Logout button */
+#btn-logout{
+    width: 95px;
+    border: none;
+    height: 30px;
+    color: #fff;
+    outline: none;
+    font-size: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 12px 5px 10px 16px;
+    background: rgb(223, 33, 33);
+}
+
+/* content of post */
+.start-post{
+    width: 104%;
+    height: 31%;
+    margin-top: -1%;
+    margin-left: -2%;
+    background: rgb(255, 255, 255);
+}
+
+/* content of post */
+#start-post{
+    margin: 5px;
+    padding: 20px;
+}
+
+/* content of user */
+.for-user{
+    width: 100%;
+    display: flex;
+}
+
+/* Username input when login */
+.user-name{
+    margin-top: 2%;
+    margin-left: 5px;
+}
+
+/* Date and time when post */
+#time-post{
+    margin-left: 4%;  
+}
+
+/* user input text for post */
+#describe{
+    width: 97%;
+    height: 20px;
+    border: none;
+    outline: none;
+    margin-left: -2%;
+    box-sizing: border-box ;
+    
+}
+
+/* Post button */
+#post-button{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* content of Post button and Update button */
+#postBtn{
+    color: #fff;
+    font-size: 20px;
+    background: rgb(30, 233, 91);
+}
+
+/* body of post content */
+.post-content{
+    width: 100%;
+    height: auto;
+    margin-top: -1%;
+    background: rgb(255, 255, 255);
+}
+
+/* about user */
+#place{
+    text-decoration: none;
+}
+
+/* content of profile and user name */
+.post-profile{
+    display: flex;
+}
+
+/* user profile */
+#pic{
+    margin-top: 1%;
+}
+
+/* name and date for user */
+.namedate{
+    width: 100%;
+    margin-top: 0%;
+    margin-left: 1%;
+}
+
+/* Content of other post */
+#other-post{
+    display: flex;
+}
+
+/* name and time for other post */
+#nameAndtime{
+    margin-left: 2%;
+    margin-top: -2%;
+}
+
+/* Post contet */
+#post-content{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    background: rgb(247, 240, 240);
+}
+
+/* Cared footer for button like, comment, and share */
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* content of delete and edit */
+.ed{
+    display: flex;
+}
+
+/* Delete and Edit button */
+#edit,
+#delete{
+    width: 50px;
+    border: none;   
+    height: 30px;
+    outline: none;
+    margin-right: 2%;
+    margin-top: -5px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+/* Edit button color */
+#edit{
+    background: rgb(111, 206, 243);
+}
+
+/* Delete button color */
+#delete{
+    background: rgb(248, 33, 33);
+}
+
+/* Like, comment, and share button */
+#like,
+#share,
+#comment{
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 130px;
+    background: rgba(226, 225, 225, 0.671);
+}
+
+#pic-posted{
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;  
+    box-sizing: border-box;    
+}
+
+#pic-posted>img{
+    width: 100%;
+}
