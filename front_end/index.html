@@ -110,7 +110,6 @@
         </div>
         <!-- All user posts -->
         <div class="content">
-          <!-- Post content -->
           <div class="start-post">
             <div id="start-post">
               <!-- profile and Username -->
@@ -153,11 +152,11 @@
                     <img src="images/203063479_789137698637512_2975936449375344321_n.jpg" width="45" height="45" id="pic" class="rounded-circle" alt="">
                     <!-- username date and time when user post -->
                     <div class="namedate">
-                      <h5 class="card-title"> {{userName}} </h5>
+                      <h5 class="card-title"> {{list.name}} </h5>
                       <small class="card-subtitle"> {{list.date}} </small>
                     </div>
                     <!-- Delete and Edit button -->
-                    <div class="ed">
+                    <div class="ed" v-if="userName == list.name">
                       <button id="edit" @click="edit(list)"><i class="fa fa-pencil-square-o" style="font-size:24px"></i></button>
                       <button id="delete" @click="remove(list)"><i class="fa fa-trash-o" style="font-size:24px"></i></button> 
                     </div>

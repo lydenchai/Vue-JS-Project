@@ -300,6 +300,7 @@ input[type="checkbox"]{
     background: rgba(226, 225, 225, 0.671);
 }
 
+/* photo box */
 #pic-posted{
     width: 100%;
     height: auto;

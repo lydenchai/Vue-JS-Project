@@ -10,12 +10,12 @@ app.use(express.urlencoded());
 const fs = require('fs');
 let all_posts = JSON.parse(fs.readFileSync('data.json'));
 
-// Get data from json
+// Get data from json file
 app.get('/post', (req, res) => {
     res.send(all_posts);
 });
 
-// Post data into json
+// Post data into json file
 app.post('/post', (req, res) => {
     let lastId = 1;
     if (all_posts.length > 0) {
@@ -33,7 +33,7 @@ app.post('/post', (req, res) => {
     res.send(all_posts);
 });
 
-// Edit data in json
+// Edit data in json file
 app.put('/post/:id', (req, res) => {
     let id = req.params.id;
     let name = req.body.name;
@@ -53,7 +53,7 @@ app.put('/post/:id', (req, res) => {
     };
 });
 
-// Delete object in json
+// Delete object in json file
 app.delete('/post/:id', (req, res) => {
     let id = req.params.id;
     let index = all_posts.findIndex( post => post.id === parseInt(id));

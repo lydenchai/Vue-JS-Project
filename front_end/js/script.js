@@ -19,24 +19,20 @@ new Vue({
             this.createBase64Image(create_img)
         },
 
+        // syntax bases 64
         createBase64Image(fileObject) {
             let reader = new FileReader()
             reader.onload = (e) => {
                 this.img = e.target.result
-
                 console.log(reader.result)
                 localStorage.setItem('img', reader.result)
             }
             reader.readAsDataURL(fileObject)
         },
-        post() {
-            this.text = ''
-        },
 
         // Login button. After user input name and click login button it will go to home page and user can post
         btnLogin(){
             localStorage.setItem( 'userName', this.userName);
-            userName = '';
             if (this.userName !== '' ){
                 this.showFormLogin = false
             }  
@@ -65,7 +61,6 @@ new Vue({
             this.getName = list.name;
             this.image = list.img;
             this.update = false;
-
         },
 
         // upload new text or content after user edit
@@ -109,19 +104,18 @@ new Vue({
             let dateTime = date + ', ' + time;
 
             // data that user post
-            let data = {
-                name : localStorage.getItem('userName'),
-                date : dateTime,
-                text : this.text,
-                img : getLogcal
-            };
-
-            if (this.text !== " " && this.img !== " "){
+            if(this.text !== '' || this.img !== ''){
+                let data = {
+                    name : localStorage.getItem('userName'),
+                    date : dateTime,
+                    text : this.text,
+                    img : getLogcal
+                };
                 axios.post('http://localhost:3000/post', data).then( (res) => {
                     this.allList = res.data;
                 });
-            };
-            
+            }
+
             // Clear everything after user click on post button 
             this.text = '';
 
